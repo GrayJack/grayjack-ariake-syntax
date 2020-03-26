@@ -1,32 +1,70 @@
-
 // Config -----------------------------------
 @syntax-hue:          228;
 @syntax-saturation:   13%;
 @syntax-brightness:   19%;
 
+@mono-1: #EBF6F7; // Aijiro
+@very-light-mono: #FFDDCA; // Shironeri
+@light-mono: #B9A193; // Shironezumi
+@mono: #6E5F57; // Sunezumi
+@slight-dark-mono: #4B3C39; // Aisumicha
+@dark-mono: #352925; // Binrōjizome
+@very-dark-mono: #27221F; // Sumi-iro
 
-// Monochrome -----------------------------------
-@mono-1: hsl(@syntax-hue, 25%, 78%); // default text
-@mono-2: hsl(@syntax-hue, 15%, 55%);
-@mono-3: hsl(@syntax-hue, 17%, 45%);
+@very-light-gray: #F9F5DD;
+@light-gray: #716A60;
+@gray: #434046;
+@slight-dark-gray: #3C393E;
+@dark-gray: #363338;
+@very-dark-gray: #242424;
+
+@red_violet_dark: #DB5A6B; // Kobai-iro
+@red_violet: #F08F90;  // Ikkonzome
+@red_violet_bright: #FCC9B9;  // Sakura-iro
+
+@red_dark: #C91F37; // Karakurenai
+@red: #CF3A24; // Ake
+@red_bright: #F8674F; // Sango-iro
+
+@orange_dark: #EC8254; // Araigaki
+@orange: #FA9258; // Umezome
+@orange_bright: #FFA26B; // Sharegaki
+
+@yellow_dark: #E29C45; // Kikuchiba
+@yellow: #FFB94E; // Hanaba-iro
+@yellow_bright: #F3C13A; // Kihada
+
+@green_dark: #5B8930; // Moegi
+@green: #8C9E5E; // Yanagizome
+@green_bright: #8DB255; // Usumoegi
+
+@blue_dark: #1F4788; // Ruri-iro
+@blue: #4D8FAC; // Sora-iro
+@blue_bright: #5D8CAE; // Gunjō-iro
+
+@violet_dark: #5A4F74; // Benikakehana-iro
+@violet: #89729E; // Fuji-iro
+@violet_bright: #78779B; // Benimidori
+
+// Extra colors
+@extra0: hsl(@syntax-hue, 25%, 78%); // default text
+@extra1: hsl(@syntax-hue, 15%, 55%);
+@extra2: hsl(@syntax-hue, 17%, 45%);
 
 // Colors -----------------------------------
-@hue-1:   hsl(197, 92%, 78%); // <-cyan
-@hue-2:   hsl(177, 72%, 77%); // <-blue
-// @hue-2:   hsl(211, 97%, 98%); // <-blue
-@hue-3:   hsl(240, 58%, 68%); // <-purple
-@hue-4:   hsl(211, 97%, 98%); // <-green
-
-@hue-5:   hsl(211, 60%, 70%); // <-red 1
-@hue-5-2: hsl(211, 55%, 55%); // <-red 2
-
-@hue-6:   hsl(282, 82%, 80%); // <-orange 1
-@hue-6-2: hsl(264, 86%, 70%); // <-orange 2
-
+@extra3:   hsl(197, 92%, 78%);
+@extra4:   hsl(177, 72%, 77%);
+@extra5:   hsl(240, 58%, 68%);
+@extra6:   hsl(211, 97%, 98%);
+@extra7:   hsl(211, 60%, 70%);
+@extra8:   hsl(211, 55%, 55%);
+@extra9:   hsl(282, 82%, 80%);
+@extra10:  hsl(264, 86%, 70%);
 
 // Base colors -----------------------------------
 @syntax-fg:     @mono-1;
-@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+// @syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-bg: @very-dark-mono;
 @syntax-gutter: darken(@syntax-fg, 36%);
 @syntax-guide:  fade(@syntax-fg, 15%);
 @syntax-accent: hsl(@syntax-hue, 100%, 66% );

@@ -1,9 +1,28 @@
 .syntax--source.syntax--python {
-  .syntax--keyword.syntax--operator.syntax--logical.syntax--python {
-    color: @hue-3;
-  }
+    .syntax--variable.syntax--self {
+        color: @orange;
+        font-style: italic;
+    }
 
-  .syntax--variable.syntax--parameter {
-    color: @hue-6;
-  }
+    .syntax--function-call.syntax--generic {
+        color: @cyan;
+    }
+
+    .syntax--call {
+        color: @cyan;
+    }
+
+    .syntax--property {
+        color: @brown;
+    }
+
+    .syntax--magic {
+        color: @green;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .syntax--number {
+        color: @brown;
+    }
 }

@@ -1,17 +1,32 @@
 .syntax--source.syntax--js {
-  .syntax--keyword.syntax--operator {
-    color: @hue-1;
-
-    // keywords are definded in https://github.com/atom/language-javascript/blob/master/grammars/javascript.cson
-    // search "instanceof" for location
-    &.syntax--delete,
-    &.syntax--in,
-    &.syntax--of,
-    &.syntax--instanceof,
-    &.syntax--new,
-    &.syntax--typeof,
-    &.syntax--void {
-      color: @hue-3;
+    .syntax--type {
+        color: @red;
     }
-  }
+
+    .syntax--constructor {
+        color: @cyan;
+    }
+
+    .syntax--console {
+        color: @cyan;
+    }
+
+    .syntax--variable.syntax--other.syntax--object.syntax--property.syntax--unquoted {
+        color: @blue;
+    }
+
+    .syntax--formal-parameter.syntax--identifier {
+        color: @orange;
+        font-style: italic;
+    }
+}
+
+.syntax--source.syntax--jsx {
+    .syntax--keyword.syntax--operator.syntax--accessor {
+        color: @syntax-text-color;
+    }
+
+    .syntax--meta.syntax--function.syntax--parameters .syntax--variable {
+        color: @orange;
+    }
 }

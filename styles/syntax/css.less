@@ -1,10 +1,12 @@
-.syntax--source.syntax--css {
-  // highlight properties/values if they are supported
-  .syntax--property-name,
-  .syntax--property-value {
-    color: @mono-2;
-    &.syntax--support {
-      color: @mono-1;
+.syntax--source.syntax--css,
+.syntax--source.syntax--sass,
+.syntax--source.syntax--less,
+.syntax--source.syntax--scss {
+    .syntax--meta.syntax--selector {
+        color: @syntax-text-color;
     }
-  }
+
+    .syntax--punctuation.syntax--definition.syntax--variable {
+        color: @red
+    }
 }
